@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+  }
+  ::-webkit-scrollbar {
+    @apply w-5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#ecf0f3];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-2xl bg-gradient-to-r from-[#00B4FA] to-[#00A5FA];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  button {
+    @apply shadow-xl hover:shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#00B4FA] to-[#00A5FA] text-white;
+  }
+}
